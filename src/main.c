@@ -37,7 +37,7 @@ int main() {
             key[strlen(key) - 1] = '\0';
 
             struct RbtNode* x = rbt_get(rbt, key);
-            if (x) {
+            if (x != NULL && x != rbt->nil) {
                 printf("\tPair Found: key=%s | value=%s\n", x->k, (char*) x->v);
             }
             else {
