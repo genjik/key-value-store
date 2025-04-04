@@ -1,7 +1,7 @@
 CC := gcc
 CFLAGS := -Wall -std=c99 -g
 
-LIB_SOURCES := lib/src/array.o lib/src/allocator.o lib/src/rbt.o
+LIB_SOURCES := lib/src/allocator.o lib/src/rbt.o
 SOURCES := src/main.o
 
 %.o: %.c
